@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portfolio | Marketing Student</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f2f5fb;
+    --ink: #142046;
+    --muted: #4a5578;
+    --accent: #e8336d;
+    --accent-soft: #fde3ec;
+    --line: #cfd7ea;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "DM Sans", system-ui, sans-serif;
+    font-size: 1.0625rem;
+    line-height: 1.65;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 1.5rem; }
+  nav { padding: 1.5rem 0; }
+  nav .wrap { display: flex; gap: 1.5rem; }
+  a { color: var(--ink); }
+  nav a { text-decoration: none; font-weight: 500; }
+  nav a:hover { color: var(--accent); }
+  a:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+
+  header { padding: 3rem 0; }
+  header .wrap { display: flex; align-items: center; gap: 2.5rem; }
+  .intro { flex: 1; min-width: 0; }
+  .headshot {
+    width: 220px; aspect-ratio: 3 / 4; object-fit: cover; object-position: center top;
+    border-radius: 8px; border: 3px solid var(--ink); box-shadow: 8px 8px 0 var(--accent);
+    flex-shrink: 0;
+  }
+  @media (max-width: 640px) {
+    header .wrap { flex-direction: column-reverse; align-items: flex-start; gap: 2rem; }
+    .headshot { width: 180px; }
+  }
+  h1 {
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 800;
+    font-size: clamp(2.6rem, 8vw, 4.5rem);
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    margin: 0 0 1.5rem;
+  }
+  .statement { font-size: 1.25rem; color: var(--muted); max-width: 34em; margin: 0; }
+
+  section { padding: 2.5rem 0; border-top: 2px solid var(--ink); }
+  h2 {
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 700;
+    font-size: 1.75rem;
+    margin: 0 0 1.5rem;
+  }
+
+  .skills { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.75rem; }
+  .skills li {
+    background: var(--accent-soft);
+    border: 2px solid var(--accent);
+    border-radius: 999px;
+    padding: 0.4rem 1.1rem;
+    font-weight: 500;
+  }
+
+  .project { padding: 1.5rem 0; border-bottom: 1px solid var(--line); }
+  .project:last-child { border-bottom: 0; }
+  h3 {
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 700;
+    font-size: 1.35rem;
+    margin: 0 0 0.5rem;
+  }
+  .project p { margin: 0 0 1rem; color: var(--muted); max-width: 40em; }
+  .project a { font-weight: 500; color: var(--accent); word-break: break-word; }
+  .project a:hover { color: var(--ink); }
+
+  footer { padding: 2rem 0 3rem; color: var(--muted); font-size: 0.9rem; }
+
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+  </div>
+</nav>
+
+<main>
+  <header>
+    <div class="wrap">
+      <div class="intro">
+        <h1>Nyla Wendel</h1>
+        <p class="statement">I am a creative and curious marketing student passionate about building authentic connections between brands and consumers.</p>
+      </div>
+      <img class="headshot" src="headshot.jpg" alt="Headshot of Nyla Wendel">
+    </div>
+  </header>
+
+  <section id="skills">
+    <div class="wrap">
+      <h2>Skills</h2>
+      <ul class="skills">
+        <li>Excel</li>
+        <li>Data analysis</li>
+        <li>Communication</li>
+        <li>Collaboration</li>
+        <li>Problem solving</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="wrap">
+      <h2>Projects</h2>
+
+      <article class="project">
+        <h3>Dyson Brand Management Project</h3>
+        <p>I worked with a team in my Brand Management Course to develop marketing concepts for the brand Dyson. I created a plan for a new product and possible implications along with developing a brand architecture map.</p>
+        <a href="https://docs.google.com/presentation/d/12K8ziP0yAz0ap0cKp25W-317HJLAfH8AInOtMc0IOxE/edit?usp=sharing" target="_blank" rel="noopener">View the Dyson presentation</a>
+      </article>
+
+      <article class="project">
+        <h3>Scarlet Fever Management Analysis</h3>
+        <p>I worked with a team in my Management skills class to understand and improve a local business. The New Brunswick Rutgers apparel store Scarlet Fever is what we studied, conducting interviews with the owner and workers throughout several weeks. The information we gathered was analyzed in the project to understand the business's strengths and improve on weaknesses by giving recommendations and how they should be implemented.</p>
+        <a href="https://docs.google.com/presentation/d/1YbnXWHbSy7EuC7tCw1HrHOCMQBN5bmbdITupWpr0KC4/edit?usp=sharing" target="_blank" rel="noopener">View the Scarlet Fever presentation</a>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">&copy; 2026 Nyla Wendel</div>
+</footer>
+
+</body>
+</html>
